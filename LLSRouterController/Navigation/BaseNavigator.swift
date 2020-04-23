@@ -221,8 +221,11 @@ extension BaseNavigator {
     }
     
     let url = urlAction.url
-    let scheme = url.scheme
-    let schemeIsSame = self.handleableURLScheme?.caseInsensitiveCompare(scheme!) != ComparisonResult.orderedSame
+    guard let scheme = url.scheme else {
+      return nil
+    }
+    
+    let schemeIsSame = self.handleableURLScheme?.caseInsensitiveCompare(scheme) != ComparisonResult.orderedSame
     // check unhandleable url scheme
     if urlAction.openExternal || schemeIsSame {
       self.willOpenExternal(urlAction: urlAction)
@@ -273,10 +276,7 @@ extension BaseNavigator {
   }
   
   func commonHandleURLAction(urlAction: URLAction, controller: UIViewController) -> Bool {
-    
-//    if controller.responds(to: #selector()) {
       return controller.handleWithURLAction(urlAction: urlAction)
-//    }
   }
   
   func pushViewController(controller: UIViewController, urlAction: URLAction) -> Void {

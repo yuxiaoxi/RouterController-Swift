@@ -19,7 +19,8 @@ class FirstViewController: RouterViewController {
     
     let label: UILabel = UILabel()
     label.text = "通过scheme跳转过来的,参数:" + (parmAAA ?? "")
-    label.frame = CGRect(x: 59, y: 140, width: 100, height: 30)
+    label.frame = CGRect(x: 59, y: 140, width: 100, height: 100)
+    label.numberOfLines = 0
     label.sizeToFit()
     label.textColor = UIColor.black
     self.view.addSubview(label)

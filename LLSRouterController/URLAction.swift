@@ -61,7 +61,8 @@ public class URLAction: NSObject {
   }
   
   required convenience init(urlString: String) {
-    self.init(url: NSURL.init(string: urlString)!)
+    let encodedString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+    self.init(url: NSURL.init(string: encodedString)!)
   }
   
   required convenience init(host: String) {

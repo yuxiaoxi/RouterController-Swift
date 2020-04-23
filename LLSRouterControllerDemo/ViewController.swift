@@ -14,6 +14,7 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     self.title = "首页"
+    self.view.backgroundColor = .white
     let button: UIButton = UIButton(type: .roundedRect)
     button.frame = CGRect(x: 59, y: 140, width: 100, height: 30)
     button.backgroundColor = UIColor.groupTableViewBackground
@@ -26,7 +27,7 @@ class ViewController: UIViewController {
   }
 
   @objc func buttonClick() {
-    _ = LLSNavigator.navigator.openURLString(urlString: "llss://firstVC?aaa=1")
+    _ = LLSNavigator.navigator.openURLString(urlString: "llss://firstVC?aaa=这个是带过来的参数")
   }
 
 }

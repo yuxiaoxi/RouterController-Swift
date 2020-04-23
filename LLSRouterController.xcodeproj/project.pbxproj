@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		072B711223598E3900F5E3C9 /* LLSRouterController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07308FDB2320F0A10066FC63 /* LLSRouterController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		07308FEC2320F0A10066FC63 /* LLSRouterController.h in Headers */ = {isa = PBXBuildFile; fileRef = 07308FDE2320F0A10066FC63 /* LLSRouterController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07308FFC2320F0C50066FC63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07308FFB2320F0C50066FC63 /* AppDelegate.swift */; };
 		07308FFE2320F0C50066FC63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07308FFD2320F0C50066FC63 /* ViewController.swift */; };
@@ -23,11 +22,12 @@
 		076B4DC4233B511000129D61 /* LLSNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B4DC3233B511000129D61 /* LLSNavigator.swift */; };
 		076B4DC6234F339900129D61 /* urlmapping in Resources */ = {isa = PBXBuildFile; fileRef = 076B4DC5234F339900129D61 /* urlmapping */; };
 		076B4DC8234F33EC00129D61 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B4DC7234F33EC00129D61 /* FirstViewController.swift */; };
-		076B4DCA2350525700129D61 /* LLSRouterController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07308FDB2320F0A10066FC63 /* LLSRouterController.framework */; };
+		07DFF65F24518DEC00F26DBA /* LLSRouterController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07308FDB2320F0A10066FC63 /* LLSRouterController.framework */; };
+		07DFF66424518ED000F26DBA /* LLSRouterController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07308FDB2320F0A10066FC63 /* LLSRouterController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		072B710F23598E1000F5E3C9 /* PBXContainerItemProxy */ = {
+		07DFF66224518EC600F26DBA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 07308FD22320F0A10066FC63 /* Project object */;
 			proxyType = 1;
@@ -37,13 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		072B711123598E2A00F5E3C9 /* Embed Frameworks */ = {
+		07DFF66124518DEC00F26DBA /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				072B711223598E3900F5E3C9 /* LLSRouterController.framework in Embed Frameworks */,
+				07DFF66424518ED000F26DBA /* LLSRouterController.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				076B4DCA2350525700129D61 /* LLSRouterController.framework in Frameworks */,
+				07DFF65F24518DEC00F26DBA /* LLSRouterController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,12 +231,12 @@
 				07308FF52320F0C50066FC63 /* Sources */,
 				07308FF62320F0C50066FC63 /* Frameworks */,
 				07308FF72320F0C50066FC63 /* Resources */,
-				072B711123598E2A00F5E3C9 /* Embed Frameworks */,
+				07DFF66124518DEC00F26DBA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				072B711023598E1000F5E3C9 /* PBXTargetDependency */,
+				07DFF66324518EC600F26DBA /* PBXTargetDependency */,
 			);
 			name = LLSRouterControllerDemo;
 			productName = LLSRouterControllerDemo;
@@ -330,10 +330,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		072B711023598E1000F5E3C9 /* PBXTargetDependency */ = {
+		07DFF66324518EC600F26DBA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 07308FDA2320F0A10066FC63 /* LLSRouterController */;
-			targetProxy = 072B710F23598E1000F5E3C9 /* PBXContainerItemProxy */;
+			targetProxy = 07DFF66224518EC600F26DBA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -545,7 +545,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6TCFK22G7X;
+				DEVELOPMENT_TEAM = 8PJZBHFZQF;
 				INFOPLIST_FILE = LLSRouterControllerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -568,7 +568,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6TCFK22G7X;
+				DEVELOPMENT_TEAM = 8PJZBHFZQF;
 				INFOPLIST_FILE = LLSRouterControllerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
