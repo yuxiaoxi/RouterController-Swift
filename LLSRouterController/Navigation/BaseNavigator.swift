@@ -197,10 +197,10 @@ extension BaseNavigator {
   }
   
   func obtainControllerWithPattern(pattern: URLPattern) -> UIViewController? {
-    if pattern.targetClass == nil {
+    guard let anyclass: AnyClass = pattern.targetClass else {
       return nil
     }
-    let anyclass: AnyClass = pattern.targetClass!
+    
     let className:String = NSStringFromClass(anyclass)
     
     if let classType = NSClassFromString(className) as? UIViewController.Type {
